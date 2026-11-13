@@ -1,0 +1,32 @@
+# genaiworkshopnov26: works in Colab and in local Python 3.11+
+# LangChain + Gemini: chat models and embeddings (ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings)
+langchain>=1.5,<2
+langchain-core>=1.8,<2
+langchain-google-genai>=4.5,<5
+# Retrievers for the Myth 1 fixes: BM25Retriever (community) and EnsembleRetriever (classic)
+langchain-community>=0.4.2,<0.5
+langchain-classic>=1.0.8,<2
+rank-bm25>=0.2.2,<0.3
+# Myth 2 agent
+langgraph>=1.2,<2
+# Tracing: on only when LANGSMITH_API_KEY is set
+langsmith>=0.14,<1
+# Plain Gemini SDK, used directly in the "under the hood" cells (LangChain uses it underneath)
+google-genai>=3.3,<4
+# Reading .env locally (Colab uses Secrets instead)
+python-dotenv>=1.2,<2
+# Myth 1: PDF text extraction, in-memory vectors
+pypdf>=7.1,<8
+# Myth 1 fix: reads PDF tables as tables, so chunks keep rows with their headers
+pdfplumber>=0.11,<0.12
+numpy>=2.0,<3
+# Myth 2: MCP server (FastMCP) loaded into LangGraph through the LangChain MCP adapter, plus async in notebooks.
+# Exact pins: the adapter (0.3.2) doesn't support MCP SDK 2.x yet (as of Nov 2026), so we stay on 1.x.
+# Tested together 2026-11-13: FastMCP stdio server -> MultiServerMCPClient -> tool call.
+mcp==1.30.0
+langchain-mcp-adapters==0.3.2
+nest-asyncio>=1.6,<2
+# Rebuilding the synthetic data (quickbasket/build_policy_pdf.py)
+reportlab>=5.1,<6
+# Running the notebooks locally (VS Code / Jupyter)
+ipykernel>=7.4,<8

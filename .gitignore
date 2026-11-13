@@ -1,0 +1,10 @@
+# Secrets: your API key lives only in .env
+.env
+.env.*
+# The agent's throwaway copy of the database
+*_work.db
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/

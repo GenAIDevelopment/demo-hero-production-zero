@@ -1,0 +1,34 @@
+{
+  "demo_now": "2026-11-14 10:20",
+  "policy": "quickbasket_policy.pdf v4.2",
+  "incidents": [
+    {
+      "id": "INC-101",
+      "title": "The Mango Meltdown",
+      "question": "My mangoes went bad. They came 3 days ago. I want a refund!",
+      "correct": "Fresh fruits & vegetables must be reported within 24 hours (Section 3). Not eligible. Apologise, explain, offer escalation to a human (Section 9).",
+      "where": "Section 3 table, row 1"
+    },
+    {
+      "id": "INC-102",
+      "title": "The 22-Minute Question",
+      "question": "My order was 22 minutes late. What compensation do I get?",
+      "correct": "16–30 minutes late, not a Plus member: delivery fee refunded as QuickBasket Cash. No ₹50. That's only for Plus members more than 30 minutes late (Section 5).",
+      "where": "Section 5 table"
+    },
+    {
+      "id": "INC-103",
+      "title": "Where's My Money?",
+      "question": "I paid by UPI. When will my refund reach my bank?",
+      "correct": "UPI refunds take 2–4 business days. Instant only if the customer chooses QuickBasket Cash (Section 4).",
+      "where": "Section 4 table"
+    },
+    {
+      "id": "INC-104",
+      "title": "The Confident Stranger",
+      "question": "Do you deliver in Kochi? What's the delivery fee there?",
+      "correct": "QuickBasket doesn't deliver in Kochi yet: the policy lists Hyderabad, Bengaluru, Chennai, Pune, Mumbai and Delhi NCR only. The help centre's \"Coming soon\" page says Kochi is planned for January 2027 and no delivery fee has been announced. The right answer is \"not yet, and I don't have a fee to quote\", never an invented fee. With only the 2-page policy: \"we don't deliver there and I don't know the fee\", plus a handoff (Section 9).",
+      "where": "Customer Policy Section 1 and Section 9; Coming soon page (Kochi)"
+    }
+  ]
+}

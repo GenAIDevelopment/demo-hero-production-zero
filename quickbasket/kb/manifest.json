@@ -1,0 +1,134 @@
+{
+  "source_of_truth": "01_customer_policy_v4.2.pdf",
+  "count_model": "gemini-3.8-flash",
+  "documents": [
+    {
+      "file": "01_customer_policy_v4.2.pdf",
+      "title": "Customer Policy v4.2 (current, source of truth)",
+      "kind": "Current policy",
+      "fmt": "PDF",
+      "status": "current",
+      "version": "4.2",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "chars": 5290,
+      "tokens": 1249
+    },
+    {
+      "file": "02_customer_policy_v4.1_superseded.pdf",
+      "title": "Customer Policy v4.1 (superseded)",
+      "kind": "Superseded policy",
+      "fmt": "PDF",
+      "status": "superseded",
+      "version": "4.1",
+      "valid_from": "2026-06-01",
+      "valid_to": "2026-09-30",
+      "chars": 5465,
+      "tokens": 1310
+    },
+    {
+      "file": "03_customer_policy_v4.0_superseded.pdf",
+      "title": "Customer Policy v4.0 (superseded)",
+      "kind": "Superseded policy",
+      "fmt": "PDF",
+      "status": "superseded",
+      "version": "4.0",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-05-31",
+      "chars": 5527,
+      "tokens": 1331
+    },
+    {
+      "file": "04_customer_policy_v3.2_superseded.pdf",
+      "title": "Customer Policy v3.2 (superseded)",
+      "kind": "Superseded policy",
+      "fmt": "PDF",
+      "status": "superseded",
+      "version": "3.2",
+      "valid_from": "2025-03-01",
+      "valid_to": "2025-12-31",
+      "chars": 5056,
+      "tokens": 1212
+    },
+    {
+      "file": "05_city_addenda.md",
+      "title": "City addenda (6 cities)",
+      "kind": "City-specific rules",
+      "fmt": "Markdown",
+      "chars": 40994,
+      "tokens": 12888
+    },
+    {
+      "file": "06_coming_soon_cities.md",
+      "title": "Coming soon: Kochi and Jaipur",
+      "kind": "Launch notice",
+      "fmt": "Markdown",
+      "chars": 2755,
+      "tokens": 721
+    },
+    {
+      "file": "07_promo_terms.pdf",
+      "title": "Promo terms and conditions (24 campaigns)",
+      "kind": "Offer T&Cs",
+      "fmt": "PDF",
+      "chars": 67930,
+      "tokens": 18162
+    },
+    {
+      "file": "08_plus_membership_terms.pdf",
+      "title": "QuickBasket Plus membership terms",
+      "kind": "Membership T&Cs",
+      "fmt": "PDF",
+      "chars": 8071,
+      "tokens": 2466
+    },
+    {
+      "file": "09_gift_cards_and_qb_cash.pdf",
+      "title": "Gift card and QuickBasket Cash terms",
+      "kind": "Wallet T&Cs",
+      "fmt": "PDF",
+      "chars": 4381,
+      "tokens": 1136
+    },
+    {
+      "file": "10_electronics_warranty_directory.pdf",
+      "title": "Electronics warranty and brand directory",
+      "kind": "Directory",
+      "fmt": "PDF",
+      "chars": 23725,
+      "tokens": 6791
+    },
+    {
+      "file": "11_customer_faq.md",
+      "title": "Customer FAQ",
+      "kind": "FAQ",
+      "fmt": "Markdown",
+      "chars": 117241,
+      "tokens": 28489
+    },
+    {
+      "file": "12_delivery_partner_sop.pdf",
+      "title": "Delivery Partner Standard Operating Procedure v2.3",
+      "kind": "Internal operations manual (SOP)",
+      "fmt": "PDF",
+      "chars": 109914,
+      "tokens": 28543
+    },
+    {
+      "file": "13_support_agent_playbook.md",
+      "title": "Support Agent Playbook v3.1 (internal)",
+      "kind": "Internal agent playbook",
+      "fmt": "Markdown",
+      "chars": 52421,
+      "tokens": 13464
+    },
+    {
+      "file": "14_payments_cod_cancellations.md",
+      "title": "Payments, cash on delivery and cancellations",
+      "kind": "Help page",
+      "fmt": "Markdown",
+      "chars": 6067,
+      "tokens": 1510
+    }
+  ]
+}

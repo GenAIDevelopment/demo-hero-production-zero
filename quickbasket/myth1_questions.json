@@ -1,0 +1,132 @@
+{
+  "frozen_on": "2026-11-13",
+  "note": "FROZEN. These 10 questions, expected answers and grading rules were written and committed before any model saw them. Never change them after seeing results. Fictional company, synthetic data. Customer Policy v4.2 (kb/01_customer_policy_v4.2.pdf) is the source of truth; 'today' is 14 November 2026.",
+  "questions": [
+    {
+      "id": "Q01",
+      "incident": "INC-101",
+      "short": "Mangoes, 3 days",
+      "type": ["incident"],
+      "language": "English",
+      "question": "My mangoes went bad. They came 3 days ago. I want a refund!",
+      "expected": "Not eligible. Fresh fruits and vegetables must be reported within 24 hours of delivery, and 3 days have passed. Apologise, explain, and offer to connect a human agent.",
+      "proof": [{"doc": "01_customer_policy_v4.2.pdf", "section": "3. Category rules, row 'Fresh fruits & vegetables'"},
+                {"doc": "01_customer_policy_v4.2.pdf", "section": "9. Escalation"}],
+      "traps": ["v4.1 says 48 hours (still not eligible at 3 days)", "general 7-day rule in Section 1"],
+      "rubric": "CORRECT if it says no refund is possible because fresh fruit must be reported within 24 hours (a human handoff offer is fine; mentioning the Chennai advisory exception is fine). WRONG if it offers, promises or suggests a refund or replacement is possible, or applies a 7-day or 48-hour window as the current rule. UNHELPFUL if it neither applies the rule nor says anything wrong (for example only 'I don't know')."
+    },
+    {
+      "id": "Q02",
+      "incident": "INC-102",
+      "short": "22 minutes late",
+      "type": ["incident"],
+      "language": "English",
+      "question": "My order was 22 minutes late. What compensation do I get?",
+      "expected": "For 16 to 30 minutes late, the delivery fee is refunded, credited as QuickBasket Cash. No ₹50: that is only for Plus members whose order is more than 30 minutes late.",
+      "proof": [{"doc": "01_customer_policy_v4.2.pdf", "section": "5. Late deliveries, row '16 to 30 minutes'"}],
+      "traps": [],
+      "rubric": "CORRECT if it says the delivery fee is refunded (as QuickBasket Cash) and does not say this customer gets ₹50 (mentioning ₹50 only as the over-30-minutes Plus rule is fine; mentioning the exclusions is fine). WRONG if it says the customer gets ₹50 or any other amount, gets nothing, or gets a bank refund. UNHELPFUL if it doesn't state the outcome."
+    },
+    {
+      "id": "Q03",
+      "incident": "INC-103",
+      "short": "UPI refund time",
+      "type": ["incident", "old-version conflict"],
+      "language": "English",
+      "question": "I paid by UPI. When will my refund reach my bank?",
+      "expected": "2–4 business days after the refund is approved, back to the same UPI-linked bank account. It is instant only if the customer chooses QuickBasket Cash instead.",
+      "proof": [{"doc": "01_customer_policy_v4.2.pdf", "section": "4. Refund timelines, row 'UPI'"},
+                {"doc": "14_payments_cod_cancellations.md", "section": "Refund timelines"}],
+      "traps": ["v3.2 says 5–7 business days"],
+      "rubric": "CORRECT if it says 2–4 business days (mentioning instant QuickBasket Cash as an option is fine). WRONG if it gives any other timeline for the bank refund, such as 5–7 business days or instant. UNHELPFUL if it gives no timeline."
+    },
+    {
+      "id": "Q04",
+      "incident": "INC-104",
+      "short": "Kochi delivery and fee",
+      "type": ["incident"],
+      "language": "English",
+      "question": "Do you deliver in Kochi? What's the delivery fee there?",
+      "expected": "Not yet. QuickBasket plans to launch in Kochi in January 2027; orders can't be placed there today and no delivery fee has been announced (customers can join the waitlist). Never quote a fee for Kochi.",
+      "proof": [{"doc": "06_coming_soon_cities.md", "section": "Kochi (Kerala); Questions we get a lot"},
+                {"doc": "01_customer_policy_v4.2.pdf", "section": "1. Our promise (cities served)"}],
+      "traps": ["other cities' fee tables in the City Addenda", "₹100 waitlist launch offer is not a delivery fee"],
+      "rubric": "CORRECT if it says QuickBasket does not deliver in Kochi now (saying it is planned for January 2027 is ideal but not required) and gives no delivery fee for Kochi. WRONG if it says QuickBasket delivers in Kochi today, or states any delivery fee amount for Kochi. UNHELPFUL if it answers neither part."
+    },
+    {
+      "id": "Q05",
+      "incident": null,
+      "short": "Apples, 30 hours",
+      "type": ["old-version conflict"],
+      "language": "English",
+      "question": "I'm in Hyderabad. My apples were delivered yesterday at 10 am and they're bruised. It's been about 30 hours now. Can I still get a refund?",
+      "expected": "No. Fresh fruits and vegetables must be reported within 24 hours of delivery, and about 30 hours have passed. Apologise, explain, and offer a human agent.",
+      "proof": [{"doc": "01_customer_policy_v4.2.pdf", "section": "3. Category rules, row 'Fresh fruits & vegetables'"}],
+      "traps": ["v4.1 says 48 hours", "playbook macro M-05 (last edited 18 July 2026) says 48 hours", "Chennai advisory 48 hours applies only in Chennai during an advisory"],
+      "rubric": "CORRECT if it says the 24-hour window has passed so a refund is not possible (offering a human handoff is fine). WRONG if it says the customer can still report or get a refund or replacement, or says the window is 48 hours for this customer. UNHELPFUL if it gives no clear answer."
+    },
+    {
+      "id": "Q06",
+      "incident": null,
+      "short": "Earbuds, 5 days (Hinglish)",
+      "type": ["old-version conflict", "Hinglish"],
+      "language": "Hinglish",
+      "question": "Maine 5 din pehle earbuds order kiye the, box abhi tak khola bhi nahi hai. Kya main inhe return karke refund le sakta hoon?",
+      "expected": "No. Electronics and accessories can be returned only within 3 days of delivery, so after 5 days a return or refund is not possible. After 3 days only the manufacturer's warranty applies, and that covers faults, not a change of mind. (Replying in Hinglish or English is fine.)",
+      "proof": [{"doc": "01_customer_policy_v4.2.pdf", "section": "3. Category rules, row 'Electronics & accessories'"},
+                {"doc": "10_electronics_warranty_directory.pdf", "section": "1. QuickBasket's window first, then the manufacturer's warranty"}],
+      "traps": ["v4.0 and v3.2 say 7 days", "FAQ section 5 (last reviewed 12 March 2026) says 7 days", "general 7-day rule"],
+      "rubric": "CORRECT if it says the earbuds cannot be returned or refunded because the electronics window is 3 days (mentioning the manufacturer warranty for faults is fine; any language is fine). WRONG if it says they can be returned, replaced or refunded, or that the window is 7 days. UNHELPFUL if it gives no clear answer."
+    },
+    {
+      "id": "Q07",
+      "incident": null,
+      "short": "40 min late, not Plus (Telugu)",
+      "type": ["old-version conflict", "Telugu"],
+      "language": "Telugu (mixed with English, as customers type)",
+      "question": "నేను Plus member కాదు. నా order 40 నిమిషాలు late గా వచ్చింది. నాకు ₹50 వస్తుందా?",
+      "expected": "No ₹50. A customer who is not a Plus member and whose order was more than 30 minutes late gets the delivery fee refunded as QuickBasket Cash. The extra ₹50 is only for Plus members. (Replying in Telugu or English is fine.)",
+      "proof": [{"doc": "01_customer_policy_v4.2.pdf", "section": "5. Late deliveries, row 'More than 30 minutes'"}],
+      "traps": ["v4.0 and v3.2 say ₹50 for all customers", "FAQ section 3 (last reviewed 12 March 2026) says ₹50 for every customer"],
+      "rubric": "CORRECT if it says this customer does not get ₹50 and gets the delivery fee refunded (as QuickBasket Cash); any language is fine. WRONG if it says the customer gets ₹50, or gets nothing at all, or gets a bank refund. UNHELPFUL if it gives no clear answer."
+    },
+    {
+      "id": "Q08",
+      "incident": null,
+      "short": "Plus, Delhi, 2:30 am",
+      "type": ["two rules"],
+      "language": "English",
+      "question": "I'm a QuickBasket Plus member in Saket, Delhi. If I order ₹600 of groceries at 2:30 am, what will I pay for delivery?",
+      "expected": "No delivery fee (Plus gives free delivery on orders above ₹199, and ₹600 is above Delhi's free-delivery level anyway), but the ₹35 Delhi NCR late-night surcharge applies, because the order is placed between 11 pm and 6 am from a 24-hour store. Plus does not remove the surcharge. So ₹35 in total.",
+      "proof": [{"doc": "05_city_addenda.md", "section": "Delhi NCR › Local rules › Late-night surcharge"},
+                {"doc": "08_plus_membership_terms.pdf", "section": "2. What you get; 3. What free delivery doesn't cover"}],
+      "traps": ["Plus free delivery alone suggests ₹0", "Delhi fee table says free above ₹499"],
+      "rubric": "CORRECT if it says there is no delivery fee but a ₹35 late-night surcharge applies (so ₹35 is payable). WRONG if it says delivery costs nothing at all, or charges a delivery fee, or gives any amount other than ₹35. UNHELPFUL if it gives no clear amount."
+    },
+    {
+      "id": "Q09",
+      "incident": null,
+      "short": "Diwali cashback after refund",
+      "type": ["two rules"],
+      "language": "English",
+      "question": "I ordered ₹1,500 of groceries on 1 November 2026 with code DIWALI10 and got ₹150 cashback. One item worth ₹500 arrived damaged and its refund has been approved. What happens to my cashback?",
+      "expected": "Part of the cashback is reversed, in proportion to the refunded amount: ₹50 of the ₹150 is reversed and ₹100 stays. If the cashback has already been spent, the ₹50 is deducted from the refund.",
+      "proof": [{"doc": "07_promo_terms.pdf", "section": "10. Diwali Dhamaka › Terms specific to this offer; refund example"}],
+      "traps": ["general promo term: refund is the amount actually paid", "'cashback is reversed' read as all of it"],
+      "rubric": "CORRECT if it says the cashback is reversed in proportion to the refund, with ₹50 reversed (or ₹100 kept). Also CORRECT if it clearly says a proportional part is reversed without the number. WRONG if it says the customer keeps all ₹150, or loses all ₹150, or gives a different amount. UNHELPFUL if it gives no clear answer."
+    },
+    {
+      "id": "Q10",
+      "incident": null,
+      "short": "September order, 40 hours",
+      "type": ["two rules", "old version legitimately applies"],
+      "language": "English",
+      "question": "My order was placed and delivered on 20 September 2026 in Hyderabad. The tomatoes were spoiled and I reported it with a photo about 40 hours after delivery. Support rejected it, saying fruit and vegetables must be reported within 24 hours. Was that right?",
+      "expected": "No, the rejection was not right. An order is governed by the policy version in force on the day it was placed. On 20 September 2026 that was Customer Policy v4.1 (orders placed 1 June to 30 September 2026), which gave 48 hours to report fresh fruits and vegetables, so a report at about 40 hours was in time. The 24-hour rule only started on 1 October 2026 with v4.2. The case should be reviewed again, by a human agent or the Customer Care Lead.",
+      "proof": [{"doc": "02_customer_policy_v4.1_superseded.pdf", "section": "Superseded banner (orders placed 1 June to 30 September 2026); 3. Category rules, row 'Fresh fruits & vegetables' (48 hours)"},
+                {"doc": "13_support_agent_playbook.md", "section": "6. Orders placed before 1 October 2026"}],
+      "traps": ["v4.2's 24 hours is the current rule but does not govern a September order"],
+      "rubric": "CORRECT if it says the rejection was wrong or should be reviewed because the September order falls under the earlier policy (v4.1) with a 48-hour window (offering escalation to a human is fine). WRONG if it says the rejection was right or that the 24-hour rule applies to this order. UNHELPFUL if it gives no view either way (for example only offers a handoff)."
+    }
+  ]
+}
