@@ -1,4 +1,4 @@
-# genaiworkshopnov26: works in Colab and in local Python 3.11+
+# Demo Hero, Production Zero: works in Colab and in local Python 3.11+
 # LangChain + Gemini: chat models and embeddings (ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings)
 langchain>=1.5,<2
 langchain-core>=1.8,<2
