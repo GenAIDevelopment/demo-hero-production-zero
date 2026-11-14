@@ -75,7 +75,7 @@ notebooks in VS Code or Jupyter.
 
 This workshop is a slice of the **Generative AI Developer Program** at Learning Thoughts: RAG,
 agents, MCP, fine-tuning and local models, each ending in a capstone project. Browse to
-[info@learningthoughts.io](https://qualitythought.in/gen-ai/) to ask about the next batch.
+https://qualitythought.in/gen-ai/ to ask about the next batch.
 
 ## Licence
 
