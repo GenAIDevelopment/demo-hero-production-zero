@@ -1,7 +1,7 @@
 # Demo Hero, Production Zero
 
 **Why your AI breaks in the real world, and how to fix it.** The code and data for a 3-hour hands-on
-workshop by Learning Thoughts.
+workshop by Quality Thought.
 
 You are the engineers on call at **QuickBasket**, a fictional quick-commerce company. Its new AI
 assistant, AskQB, goes live tomorrow morning. Two beliefs get tested with real measurements:
@@ -73,9 +73,11 @@ notebooks in VS Code or Jupyter.
 
 ## Want to go further?
 
-This workshop is a slice of the **Generative AI Developer Program** at Learning Thoughts: RAG,
+This workshop is a slice of the **Generative AI Developer Program** at Quality Thought: RAG,
 agents, MCP, fine-tuning and local models, each ending in a capstone project. Browse to
 https://qualitythought.in/gen-ai/ to ask about the next batch.
+
+Contact: https://qualitythought.in/contact-us/ or info@qualitythought.in.
 
 ## Licence
 

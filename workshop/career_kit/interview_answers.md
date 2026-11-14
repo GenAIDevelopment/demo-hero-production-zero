@@ -145,4 +145,4 @@ answer in **STAR** form: **S**ituation, **T**ask, **A**ction, **R**esult.
 
 ---
 
-*Fictional company. All customers, orders and policies are synthetic. Workshop by Learning Thoughts.*
+*Fictional company. All customers, orders and policies are synthetic. Workshop by Quality Thought.*

@@ -149,4 +149,4 @@ a tool changes. Add an alert when any customer reaches three refunds in 30 days.
 
 ---
 
-*Fictional company. All customers, orders and policies are synthetic. Workshop by Learning Thoughts.*
+*Fictional company. All customers, orders and policies are synthetic. Workshop by Quality Thought.*

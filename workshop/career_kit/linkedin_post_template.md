@@ -11,7 +11,7 @@
   it out.
 - **Add something of yours.** A screenshot of your notebook's before-and-after table, or your fork on
   GitHub, is worth more than any sentence.
-- **Tag Learning Thoughts** so your post reaches the others who were in the room.
+- **Tag Quality Thought** so your post reaches the others who were in the room.
 
 ---
 
@@ -32,7 +32,7 @@
 >
 > **What I'm taking away:** [one sentence you'd say to a friend.]
 >
-> Thanks to Learning Thoughts for the workshop, "Demo Hero, Production Zero". *(tag the Learning Thoughts
+> Thanks to Quality Thought for the workshop, "Demo Hero, Production Zero". *(tag the Quality Thought
 > page here)*
 >
 > #GenerativeAI #AIEngineering #RAG #AIAgents
@@ -66,7 +66,7 @@ own voice before posting; identical posts from thirty people help nobody.
 > What I'm taking away: a prompt asks. A tool enforces. And "we only changed the model" is a change that
 > needs testing.
 >
-> Thanks to Learning Thoughts for "Demo Hero, Production Zero".
+> Thanks to Quality Thought for "Demo Hero, Production Zero".
 >
 > #GenerativeAI #AIAgents #MCP #AIEngineering
 
@@ -91,7 +91,7 @@ own voice before posting; identical posts from thirty people help nobody.
 > What I'm taking away: "it gives the right answer" is where a demo stops. What does it cost, and can you
 > prove it, is where the job starts.
 >
-> Thanks to Learning Thoughts for "Demo Hero, Production Zero".
+> Thanks to Quality Thought for "Demo Hero, Production Zero".
 >
 > #GenerativeAI #RAG #LLM #AIEngineering
 
@@ -112,10 +112,10 @@ own voice before posting; identical posts from thirty people help nobody.
 > What I'm taking away: write the test before you look at the output. It's the cheapest thing in the
 > whole project, and it's the part I'd skipped.
 >
-> Thanks to Learning Thoughts for "Demo Hero, Production Zero".
+> Thanks to Quality Thought for "Demo Hero, Production Zero".
 >
 > #GenerativeAI #LLMEvals #RAG #AIEngineering
 
 ---
 
-*Fictional company. All customers, orders and policies are synthetic. Workshop by Learning Thoughts.*
+*Fictional company. All customers, orders and policies are synthetic. Workshop by Quality Thought.*
